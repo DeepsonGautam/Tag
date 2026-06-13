@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bg0fcqcubsv2u" path="res://Scene/player_2.tscn" id="3_ejll3"]
 [ext_resource type="Texture2D" uid="uid://cqwt72ky6g373" path="res://Assets/grass_2d.png" id="4_scul4"]
 [ext_resource type="Texture2D" uid="uid://2dh4x48fnrro" path="res://Assets/tree/FreeEnvironment/FreePack.png" id="6_37axr"]
+[ext_resource type="PackedScene" uid="uid://cfrpxyxrk3jcg" path="res://Scene/t_imer.tscn" id="7_ol2hl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_37axr"]
 texture = ExtResource("1_pcvp0")
@@ -198,7 +199,7 @@ layer_5/name = "Layer5"
 layer_5/tile_data = PackedInt32Array(-458689, 262146, 1, -458688, 262146, 1, -458687, 262146, 1, -458686, 262146, 1, -458685, 262146, 1, -458684, 262146, 1, -458683, 262146, 1, -458682, 262146, 1, -458681, 262146, 1, -458680, 262146, 1, -458679, 262146, 1, -458678, 262146, 1, -458677, 262146, 1, -196554, 327682, 1, -196553, 327682, 1, -196552, 327682, 1, -196551, 327682, 1, 1114164, 196610, 8, 1179700, 196610, 9, 1245236, 196610, 10, 1114165, 262146, 8, 1179701, 262146, 9, 1245237, 262146, 10)
 
 [node name="Player2" parent="." unique_id=1537353367 instance=ExtResource("3_ejll3")]
-position = Vector2(415, -153)
+position = Vector2(574, -191)
 
 [node name="Player1" parent="." unique_id=1001182306 instance=ExtResource("2_dlwip")]
 position = Vector2(-177, 330)
@@ -206,3 +207,5 @@ position = Vector2(-177, 330)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1862481120]
 position = Vector2(1434, 126)
 zoom = Vector2(0.41, 0.6)
+
+[node name="TImer" parent="." unique_id=993683471 instance=ExtResource("7_ol2hl")]

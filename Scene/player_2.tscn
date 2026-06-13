@@ -117,7 +117,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ibvbp"]
 radius = 13.0
-height = 54.0
+height = 46.0
 
 [node name="Player2" type="CharacterBody2D" unique_id=1537353367]
 collision_mask = 2
@@ -129,7 +129,7 @@ scale = Vector2(3.000625, 3.000625)
 sprite_frames = SubResource("SpriteFrames_6xkkx")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.8908476
+frame_progress = 0.1320606
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1372130862]
 position = Vector2(224, 199)

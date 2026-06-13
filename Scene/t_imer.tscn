@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cfrpxyxrk3jcg"]
+
+[ext_resource type="Script" uid="uid://ccu5qtk8vhpga" path="res://Scripts/t_imer.gd" id="1_02jfu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u6a4j"]
+font_size = 60
+
+[node name="TImer" type="Node" unique_id=993683471]
+script = ExtResource("1_02jfu")
+
+[node name="Label" type="Label" parent="." unique_id=940179951]
+offset_left = 1379.0
+offset_top = -364.0
+offset_right = 1533.0
+offset_bottom = -281.0
+text = "00:00"
+label_settings = SubResource("LabelSettings_u6a4j")
+
+[node name="Timer" type="Timer" parent="." unique_id=298861462]
+wait_time = 60.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
