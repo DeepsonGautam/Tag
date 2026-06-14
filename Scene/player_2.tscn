@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c4ilfu51oufjb" path="res://Scripts/player_2.gd" id="1_lgix7"]
 [ext_resource type="Texture2D" uid="uid://dcw6rr5n5w60d" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/With_Shadows/Human_Soldier_Sword_Shield_Idle-Sheet.png" id="2_hahif"]
 [ext_resource type="Texture2D" uid="uid://cklci4hpknsma" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/With_Shadows/Human_Soldier_Sword_Shield_Walk-Sheet.png" id="3_ibvbp"]
+[ext_resource type="Texture2D" uid="uid://bjd85npqike2u" path="res://Assets/tag/Seer_2/PNG/Vector Parts/SlashFX.png" id="4_hl7oy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ibvbp"]
 atlas = ExtResource("2_hahif")
@@ -129,8 +130,13 @@ scale = Vector2(3.000625, 3.000625)
 sprite_frames = SubResource("SpriteFrames_6xkkx")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.1320606
+frame_progress = 0.58968747
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1372130862]
 position = Vector2(224, 199)
 shape = SubResource("CapsuleShape2D_ibvbp")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1597126814]
+position = Vector2(214, 116)
+scale = Vector2(0.12436994, 0.12436994)
+texture = ExtResource("4_hl7oy")

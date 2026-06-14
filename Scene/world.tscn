@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dgjdk64yote1x"]
 
+[ext_resource type="Script" uid="uid://bbr31c8d3sf01" path="res://Scripts/world.gd" id="1_ddf65"]
 [ext_resource type="Texture2D" uid="uid://bujvhacg6xgy3" path="res://Assets/tiles.png" id="1_emx41"]
 [ext_resource type="Texture2D" uid="uid://cjbqfywmos05l" path="res://sky.jpg" id="1_pcvp0"]
 [ext_resource type="PackedScene" uid="uid://cde7xdk6f5vcu" path="res://Scene/player_1.tscn" id="2_dlwip"]
@@ -175,6 +176,7 @@ sources/1 = SubResource("TileSetAtlasSource_37axr")
 sources/2 = SubResource("TileSetAtlasSource_ol2hl")
 
 [node name="World" type="Node2D" unique_id=2072840266]
+script = ExtResource("1_ddf65")
 
 [node name="Panel" type="Panel" parent="." unique_id=1488097681]
 offset_left = -232.0

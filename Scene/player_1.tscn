@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dj12t6vj0m6kv" path="res://Scripts/player_1.gd" id="1_8fdkc"]
 [ext_resource type="Texture2D" uid="uid://bjsnvgf5hpwp8" path="res://Assets/SUNNYSIDE_WORLD_CHARACTERS_PARTS_V0.3.1/WALKING/base_walk_strip8.png" id="2_mojx4"]
 [ext_resource type="Texture2D" uid="uid://c2k2q12l1vdr7" path="res://Assets/SUNNYSIDE_WORLD_CHARACTERS_PARTS_V0.3.1/IDLE/base_idle_strip9.png" id="3_fig2j"]
+[ext_resource type="Texture2D" uid="uid://cx8nyvn7tpqap" path="res://Assets/tag/Seer_1/PNG/Vector Parts/SlashFX.png" id="4_632wp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1vmss"]
 atlas = ExtResource("2_mojx4")
@@ -150,8 +151,14 @@ scale = Vector2(3.356742, 3.7500002)
 sprite_frames = SubResource("SpriteFrames_ydqvc")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.004756034
+frame_progress = 0.5748173
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=302757794]
 position = Vector2(294, 160)
 shape = SubResource("CapsuleShape2D_8fdkc")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=2035840386]
+visible = false
+position = Vector2(284, 73)
+scale = Vector2(0.13709678, 0.13709678)
+texture = ExtResource("4_632wp")

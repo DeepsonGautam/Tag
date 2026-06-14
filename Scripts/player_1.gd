@@ -3,6 +3,14 @@ extends CharacterBody2D
 const SPEED = 400.0
 const JUMP_VELOCITY = -500.0
 
+var is_tagged = false
+
+func set_tagged(value: bool):
+	is_tagged = value
+	$Arrow.visible = is_tagged
+
+
+
 func _physics_process(delta: float) -> void:
 
 	# Gravity
