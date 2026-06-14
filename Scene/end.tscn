@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bxiw18b7d8uyf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xveuw"]
+bg_color = Color(0.05088351, 0.6370353, 0.94488686, 1)
+
+[node name="End" type="Control" unique_id=129583565]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1103865152]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 639.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xveuw")

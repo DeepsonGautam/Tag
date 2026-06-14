@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cqwt72ky6g373" path="res://Assets/grass_2d.png" id="4_scul4"]
 [ext_resource type="Texture2D" uid="uid://2dh4x48fnrro" path="res://Assets/tree/FreeEnvironment/FreePack.png" id="6_37axr"]
 [ext_resource type="PackedScene" uid="uid://cfrpxyxrk3jcg" path="res://Scene/t_imer.tscn" id="7_ol2hl"]
+[ext_resource type="PackedScene" uid="uid://cpxknbehqwr3n" path="res://Scene/camera_2d.tscn" id="9_h7cfj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_37axr"]
 texture = ExtResource("1_pcvp0")
@@ -178,12 +179,23 @@ sources/2 = SubResource("TileSetAtlasSource_ol2hl")
 [node name="World" type="Node2D" unique_id=2072840266]
 script = ExtResource("1_ddf65")
 
+[node name="TImer" parent="." unique_id=993683471 instance=ExtResource("7_ol2hl")]
+
 [node name="Panel" type="Panel" parent="." unique_id=1488097681]
 offset_left = -232.0
 offset_top = -698.0
 offset_right = 3055.513
 offset_bottom = 943.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_37axr")
+
+[node name="Player1" parent="." unique_id=1001182306 instance=ExtResource("2_dlwip")]
+position = Vector2(691, -88)
+
+[node name="Player2" parent="." unique_id=1537353367 instance=ExtResource("3_ejll3")]
+position = Vector2(397, -184)
+
+[node name="MultiCamera" parent="." unique_id=1633932506 instance=ExtResource("9_h7cfj")]
+position = Vector2(1222, 97)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1903841556]
 tile_set = SubResource("TileSet_dlwip")
@@ -199,15 +211,3 @@ layer_4/name = "Layer4"
 layer_4/tile_data = PackedInt32Array(-458689, 327682, 1, -458688, 327682, 1, -458687, 327682, 1, -458686, 327682, 1, -458685, 327682, 1, -458684, 327682, 1, -458683, 327682, 1, -458682, 327682, 1, -458681, 327682, 1, -458680, 327682, 1, -458679, 327682, 1, -458678, 327682, 1, -458677, 327682, 1, -262090, 458754, 1, -196554, 458754, 2, -262089, 524290, 1, -196553, 524290, 2, -196552, 589826, 2)
 layer_5/name = "Layer5"
 layer_5/tile_data = PackedInt32Array(-458689, 262146, 1, -458688, 262146, 1, -458687, 262146, 1, -458686, 262146, 1, -458685, 262146, 1, -458684, 262146, 1, -458683, 262146, 1, -458682, 262146, 1, -458681, 262146, 1, -458680, 262146, 1, -458679, 262146, 1, -458678, 262146, 1, -458677, 262146, 1, -196554, 327682, 1, -196553, 327682, 1, -196552, 327682, 1, -196551, 327682, 1, 1114164, 196610, 8, 1179700, 196610, 9, 1245236, 196610, 10, 1114165, 262146, 8, 1179701, 262146, 9, 1245237, 262146, 10)
-
-[node name="Player2" parent="." unique_id=1537353367 instance=ExtResource("3_ejll3")]
-position = Vector2(574, -191)
-
-[node name="Player1" parent="." unique_id=1001182306 instance=ExtResource("2_dlwip")]
-position = Vector2(-177, 330)
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1862481120]
-position = Vector2(1434, 126)
-zoom = Vector2(0.41, 0.6)
-
-[node name="TImer" parent="." unique_id=993683471 instance=ExtResource("7_ol2hl")]

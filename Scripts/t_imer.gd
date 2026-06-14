@@ -17,6 +17,10 @@ func _process(delta):
 
 
 func _on_timer_timeout() -> void:
-	pass
+	if Global.player_1 == true:
+		get_tree().change_scene_to_file("res://Scene/end.tscn")
+		
+	else:
+		get_tree().change_scene_to_file("res://Scene/end.tscn")
 	
 	
