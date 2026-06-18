@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b4l4ftyk8fv4w"]
+
+[ext_resource type="Script" uid="uid://ccu5qtk8vhpga" path="res://Scripts/t_imer.gd" id="1_bc3mb"]
+
+[node name="timer" type="Node" unique_id=1477301046]
+script = ExtResource("1_bc3mb")
+
+[node name="Timer" type="Timer" parent="." unique_id=1610943106]

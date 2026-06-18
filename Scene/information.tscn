@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://bht41m1jr8otu"]
+
+[ext_resource type="Texture2D" uid="uid://cvmujsg3ll1hb" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/No_Shadows/Human_Soldier_Sword_Shield_Idle-Sheet.png" id="1_ftmcx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycqul"]
+bg_color = Color(0.3467757, 0.6854715, 0.4390861, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4uh4"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fm70g"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd0nq"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kd315"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kavn"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ek5v"]
+atlas = ExtResource("1_ftmcx")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ichbt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4uh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fm70g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd0nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kd315")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kavn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ek5v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ftmcx"]
+font_size = 50
+
+[node name="information" type="Control" unique_id=722819857]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1037442497]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ycqul")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=117663417]
+position = Vector2(299.99997, 293)
+scale = Vector2(6.9583335, 6.9583335)
+sprite_frames = SubResource("SpriteFrames_ichbt")
+autoplay = "default"
+frame = 5
+frame_progress = 0.6056919
+
+[node name="Label" type="Label" parent="." unique_id=1112927216]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 135.0
+offset_right = 399.0
+offset_bottom = 204.0
+text = "Player 1"
+label_settings = SubResource("LabelSettings_ftmcx")
+
+[node name="Button" type="Button" parent="." unique_id=1343741156]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 379.0
+offset_right = 337.77274
+offset_bottom = 453.0
+text = "W"

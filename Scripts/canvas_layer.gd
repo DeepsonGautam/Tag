@@ -1,4 +1,4 @@
-extends Node
+extends CanvasLayer
 
 @onready var label = $Label
 @onready var timer = $Timer
@@ -21,6 +21,6 @@ func _on_timer_timeout() -> void:
 		get_tree().change_scene_to_file("res://Scene/end.tscn")
 		
 	else:
-		get_tree().change_scene_to_file("res://Scene/end.tscn")
+		get_tree().change_scene_to_file("res://Scene/end_2.tscn")
 	
 	

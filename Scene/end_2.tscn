@@ -1,62 +1,83 @@
-[gd_scene format=3 uid="uid://bxiw18b7d8uyf"]
+[gd_scene format=3 uid="uid://bwwh70ok7hcyd"]
 
-[ext_resource type="Texture2D" uid="uid://cvmujsg3ll1hb" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/No_Shadows/Human_Soldier_Sword_Shield_Idle-Sheet.png" id="1_a6pfi"]
-[ext_resource type="Script" uid="uid://bi5rq01pp1m12" path="res://Scripts/end.gd" id="1_d80m6"]
-[ext_resource type="Texture2D" uid="uid://cjw22vbhfhkr" path="res://Screenshot_20260618_104307.png" id="2_672sv"]
-[ext_resource type="FontFile" uid="uid://c425awwdk4bjj" path="res://Assets/toxigenesis bd.otf" id="2_y7eoi"]
-[ext_resource type="AudioStream" uid="uid://dvm4i2o6ee8ib" path="res://Main_menu.mp3" id="5_n2h0p"]
-[ext_resource type="AudioStream" uid="uid://c1s2ec78lslls" path="res://button.mp3" id="6_1nb4x"]
+[ext_resource type="Script" uid="uid://b5va1x1hb8us2" path="res://Scripts/end_2.gd" id="1_rgtl5"]
+[ext_resource type="Texture2D" uid="uid://cjw22vbhfhkr" path="res://Screenshot_20260618_104307.png" id="2_oydnj"]
+[ext_resource type="Texture2D" uid="uid://c2k2q12l1vdr7" path="res://Assets/SUNNYSIDE_WORLD_CHARACTERS_PARTS_V0.3.1/IDLE/base_idle_strip9.png" id="3_rgtl5"]
+[ext_resource type="FontFile" uid="uid://c425awwdk4bjj" path="res://Assets/toxigenesis bd.otf" id="4_8l2tv"]
+[ext_resource type="AudioStream" uid="uid://dvm4i2o6ee8ib" path="res://Main_menu.mp3" id="5_oydnj"]
+[ext_resource type="AudioStream" uid="uid://cp0xiejha8dmt" path="res://button click.mp3" id="6_ingbh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n2h0p"]
-texture = ExtResource("2_672sv")
+texture = ExtResource("2_oydnj")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_672sv"]
 bg_color = Color(0, 0, 0, 0.6117647)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y7eoi"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(0, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_oydnj"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(0, 0, 96, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d80m6"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(96, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ingbh"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(96, 0, 96, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_672sv"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(192, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l2tv"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(192, 0, 96, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n2h0p"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(288, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpkgb"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(288, 0, 96, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1nb4x"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(384, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_06b4a"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(384, 0, 96, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x4egc"]
-atlas = ExtResource("1_a6pfi")
-region = Rect2(480, 0, 96, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqkwu"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(480, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qirq5"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(576, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0f44"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(672, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66d46"]
+atlas = ExtResource("3_rgtl5")
+region = Rect2(768, 0, 96, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7pgol"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y7eoi")
+"texture": SubResource("AtlasTexture_oydnj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_d80m6")
+"texture": SubResource("AtlasTexture_ingbh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_672sv")
+"texture": SubResource("AtlasTexture_8l2tv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_n2h0p")
+"texture": SubResource("AtlasTexture_dpkgb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1nb4x")
+"texture": SubResource("AtlasTexture_06b4a")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_x4egc")
+"texture": SubResource("AtlasTexture_gqkwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qirq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0f44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66d46")
 }],
 "loop": true,
 "name": &"default",
@@ -64,7 +85,7 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_d80m6"]
-font = ExtResource("2_y7eoi")
+font = ExtResource("4_8l2tv")
 font_size = 50
 font_color = Color(0.9999998, 0.88303846, 0.53114545, 1)
 
@@ -80,14 +101,14 @@ bg_color = Color(0.67058825, 0.5882353, 0.44705883, 0)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1nb4x"]
 bg_color = Color(0.67058825, 0.5882353, 0.44705883, 0)
 
-[node name="End" type="Control" unique_id=129583565]
+[node name="End2" type="Control" unique_id=129583565]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_d80m6")
+script = ExtResource("1_rgtl5")
 
 [node name="Panel" type="Panel" parent="." unique_id=1103865152]
 layout_mode = 0
@@ -120,7 +141,7 @@ offset_left = 137.0
 offset_top = 99.0
 offset_right = 577.0
 offset_bottom = 160.0
-text = "~Player 1 WON~"
+text = "~Player 2 WON~"
 label_settings = SubResource("LabelSettings_d80m6")
 
 [node name="Panel4" type="Panel" parent="." unique_id=1719631383]
@@ -143,7 +164,7 @@ offset_bottom = 405.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.7595951, 0.7595951, 0.7595951, 1)
-theme_override_fonts/font = ExtResource("2_y7eoi")
+theme_override_fonts/font = ExtResource("4_8l2tv")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_d80m6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n2h0p")
@@ -158,21 +179,21 @@ offset_right = 1046.0
 offset_bottom = 519.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.2327216, 0.23272166, 0.23272151, 1)
-theme_override_fonts/font = ExtResource("2_y7eoi")
+theme_override_colors/font_hover_color = Color(0.7607843, 0.7607843, 0.7607843, 1)
+theme_override_fonts/font = ExtResource("4_8l2tv")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_d80m6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n2h0p")
 theme_override_styles/hover = SubResource("StyleBoxFlat_1nb4x")
 text = "Exit"
 
-[node name="Background" type="AudioStreamPlayer" parent="." unique_id=832434309]
-stream = ExtResource("5_n2h0p")
+[node name="Background" type="AudioStreamPlayer" parent="." unique_id=1001143501]
+stream = ExtResource("5_oydnj")
 autoplay = true
 parameters/looping = true
 
-[node name="Button" type="AudioStreamPlayer" parent="." unique_id=213526197]
-stream = ExtResource("6_1nb4x")
+[node name="Button" type="AudioStreamPlayer" parent="." unique_id=1231306237]
+stream = ExtResource("6_ingbh")
 
 [connection signal="pressed" from="Play_Again" to="." method="_on_play_again_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -118,7 +118,11 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ibvbp"]
 radius = 13.0
-height = 46.0
+height = 54.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hl7oy"]
+radius = 14.0
+height = 52.0
 
 [node name="Player2" type="CharacterBody2D" unique_id=1537353367]
 collision_mask = 2
@@ -131,12 +135,19 @@ sprite_frames = SubResource("SpriteFrames_6xkkx")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.58968747
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1372130862]
-position = Vector2(224, 199)
+position = Vector2(224, 192)
 shape = SubResource("CapsuleShape2D_ibvbp")
 
 [node name="Arrow" type="Sprite2D" parent="." unique_id=1597126814]
 position = Vector2(214, 116)
 scale = Vector2(0.12436994, 0.12436994)
 texture = ExtResource("4_hl7oy")
+
+[node name="HitBox" type="Area2D" parent="." unique_id=933504535]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=1443552818]
+position = Vector2(224, 192)
+shape = SubResource("CapsuleShape2D_hl7oy")
