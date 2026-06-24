@@ -1,9 +1,30 @@
 [gd_scene format=3 uid="uid://bht41m1jr8otu"]
 
 [ext_resource type="Texture2D" uid="uid://cvmujsg3ll1hb" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/No_Shadows/Human_Soldier_Sword_Shield_Idle-Sheet.png" id="1_ftmcx"]
+[ext_resource type="Script" uid="uid://38jvj3ow4llu" path="res://Scripts/information.gd" id="1_jd0nq"]
+[ext_resource type="FontFile" uid="uid://c425awwdk4bjj" path="res://Assets/toxigenesis bd.otf" id="2_h4uh4"]
+[ext_resource type="Texture2D" uid="uid://c2k2q12l1vdr7" path="res://Assets/SUNNYSIDE_WORLD_CHARACTERS_PARTS_V0.3.1/IDLE/base_idle_strip9.png" id="2_ycqul"]
+[ext_resource type="FontFile" uid="uid://beg76fa8qmr7e" path="res://batmfa__.ttf" id="4_fm70g"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycqul"]
-bg_color = Color(0.3467757, 0.6854715, 0.4390861, 1)
+[sub_resource type="Gradient" id="Gradient_h4uh4"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fm70g"]
+gradient = SubResource("Gradient_h4uh4")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h4uh4"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fm70g"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h4uh4"]
 atlas = ExtResource("1_ftmcx")
@@ -56,7 +77,175 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ftmcx"]
+font = ExtResource("2_h4uh4")
 font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jd0nq"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kd315"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3kavn"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ichbt"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xj6k0"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prpij"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uj8jh"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7lv8"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(384, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g31y"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(480, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyqbb"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(576, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klgwp"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(672, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_truqr"]
+atlas = ExtResource("2_ycqul")
+region = Rect2(768, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tglbw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ichbt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xj6k0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prpij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uj8jh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7lv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g31y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hyqbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klgwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_truqr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ek5v"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ichbt"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xj6k0"]
+bg_color = Color(0, 0, 0, 0.44705883)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prpij"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uj8jh"]
+bg_color = Color(0.08208982, 0.082089834, 0.08208982, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x7lv8"]
+bg_color = Color(0.3503138, 0.3503137, 0.3503137, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8g31y"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyqbb"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klgwp"]
+bg_color = Color(0.34901962, 0.34901962, 0.34901962, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 8
 
 [node name="information" type="Control" unique_id=722819857]
 layout_mode = 3
@@ -65,15 +254,34 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jd0nq")
 
-[node name="Panel" type="Panel" parent="." unique_id=1037442497]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=684718797]
+position = Vector2(562, 312.5)
+scale = Vector2(18.5625, 10.765625)
+texture = SubResource("GradientTexture2D_fm70g")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1131085892]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_ycqul")
+anchors_preset = -1
+anchor_right = 0.18200001
+anchor_bottom = 0.15200001
+offset_left = 117.0
+offset_top = 111.0
+offset_right = 262.336
+offset_bottom = 492.504
+theme_override_styles/panel = SubResource("StyleBoxFlat_h4uh4")
+
+[node name="Panel2" type="Panel" parent="Panel2" unique_id=1344372023]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.18200001
+anchor_bottom = 0.15200001
+offset_left = 600.0
+offset_top = 2.0
+offset_right = 891.39
+offset_bottom = 406.03998
+theme_override_styles/panel = SubResource("StyleBoxFlat_fm70g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=117663417]
 position = Vector2(299.99997, 293)
@@ -85,12 +293,22 @@ frame_progress = 0.6056919
 
 [node name="Label" type="Label" parent="." unique_id=1112927216]
 layout_mode = 0
-offset_left = 206.0
-offset_top = 135.0
-offset_right = 399.0
-offset_bottom = 204.0
+offset_left = 193.0
+offset_top = 136.0
+offset_right = 401.0
+offset_bottom = 205.0
 text = "Player 1"
 label_settings = SubResource("LabelSettings_ftmcx")
+
+[node name="Button2" type="Button" parent="." unique_id=1019995287]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 467.0
+offset_right = 245.7727
+offset_bottom = 541.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_jd0nq")
+text = "A"
 
 [node name="Button" type="Button" parent="." unique_id=1343741156]
 layout_mode = 0
@@ -98,4 +316,107 @@ offset_left = 252.0
 offset_top = 379.0
 offset_right = 337.77274
 offset_bottom = 453.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_kd315")
 text = "W"
+
+[node name="Button3" type="Button" parent="." unique_id=1270740551]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 467.0
+offset_right = 429.7727
+offset_bottom = 541.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_3kavn")
+text = "D"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1966612035]
+position = Vector2(896.00006, 304)
+scale = Vector2(7.15625, 7.15625)
+sprite_frames = SubResource("SpriteFrames_tglbw")
+autoplay = "default"
+flip_h = true
+
+[node name="Label2" type="Label" parent="." unique_id=1031733469]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 135.0
+offset_right = 1011.0
+offset_bottom = 204.0
+text = "Player 2"
+label_settings = SubResource("LabelSettings_ftmcx")
+
+[node name="Button4" type="Button" parent="." unique_id=306103983]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 467.0
+offset_right = 845.7727
+offset_bottom = 541.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ek5v")
+text = " ← "
+
+[node name="Button5" type="Button" parent="." unique_id=720091202]
+layout_mode = 0
+offset_left = 852.0
+offset_top = 373.0
+offset_right = 937.77277
+offset_bottom = 450.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ichbt")
+text = "↑"
+
+[node name="Button6" type="Button" parent="." unique_id=619153182]
+layout_mode = 0
+offset_left = 944.0
+offset_top = 466.0
+offset_right = 1029.7727
+offset_bottom = 545.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xj6k0")
+text = " →"
+
+[node name="Play" type="Button" parent="." unique_id=336957203]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = -290.0
+offset_right = 128.625
+offset_bottom = -227.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_fm70g")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_prpij")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uj8jh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x7lv8")
+text = "Play"
+
+[node name="Exit" type="Button" parent="." unique_id=1363126373]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -200.0
+offset_right = 129.33337
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_fm70g")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_8g31y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hyqbb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_klgwp")
+text = "Exit"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
