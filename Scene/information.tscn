@@ -2,15 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://cvmujsg3ll1hb" path="res://Assets/FreeCharactersAnimationsAssetPack/SpriteSheets(96x96)/Human_Soldier_Sword_Shield/No_Shadows/Human_Soldier_Sword_Shield_Idle-Sheet.png" id="1_ftmcx"]
 [ext_resource type="Script" uid="uid://38jvj3ow4llu" path="res://Scripts/information.gd" id="1_jd0nq"]
+[ext_resource type="Texture2D" uid="uid://cjw22vbhfhkr" path="res://Screenshot_20260618_104307.png" id="2_8ek5v"]
 [ext_resource type="FontFile" uid="uid://c425awwdk4bjj" path="res://Assets/toxigenesis bd.otf" id="2_h4uh4"]
 [ext_resource type="Texture2D" uid="uid://c2k2q12l1vdr7" path="res://Assets/SUNNYSIDE_WORLD_CHARACTERS_PARTS_V0.3.1/IDLE/base_idle_strip9.png" id="2_ycqul"]
 [ext_resource type="FontFile" uid="uid://beg76fa8qmr7e" path="res://batmfa__.ttf" id="4_fm70g"]
-
-[sub_resource type="Gradient" id="Gradient_h4uh4"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_fm70g"]
-gradient = SubResource("Gradient_h4uh4")
-fill_from = Vector2(1, 1)
+[ext_resource type="AudioStream" uid="uid://c1s2ec78lslls" path="res://button.mp3" id="6_3kavn"]
+[ext_resource type="AudioStream" uid="uid://dvm4i2o6ee8ib" path="res://Main_menu.mp3" id="6_kd315"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h4uh4"]
 bg_color = Color(0, 0, 0, 0.44705883)
@@ -257,9 +254,9 @@ grow_vertical = 2
 script = ExtResource("1_jd0nq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=684718797]
-position = Vector2(562, 312.5)
+position = Vector2(-232, 1591)
 scale = Vector2(18.5625, 10.765625)
-texture = SubResource("GradientTexture2D_fm70g")
+texture = ExtResource("2_8ek5v")
 
 [node name="Panel2" type="Panel" parent="." unique_id=1131085892]
 layout_mode = 1
@@ -417,6 +414,14 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8g31y")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_hyqbb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klgwp")
 text = "Exit"
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=586879463]
+stream = ExtResource("6_3kavn")
+
+[node name="Background" type="AudioStreamPlayer" parent="." unique_id=870776175]
+stream = ExtResource("6_kd315")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

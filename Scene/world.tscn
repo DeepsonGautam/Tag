@@ -248,7 +248,7 @@ text = "00:00"
 label_settings = SubResource("LabelSettings_h7cfj")
 
 [node name="Timer" type="Timer" parent="CanvasLayer" unique_id=951529790]
-wait_time = 10.0
+wait_time = 12.0
 one_shot = true
 autostart = true
 

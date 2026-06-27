@@ -1,7 +1,5 @@
 extends Control
 
-
-
 func _on_play_pressed() -> void:
 	$Click.play()
 	await $Click.finished
